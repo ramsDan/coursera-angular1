@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Coursera Angular JS</title>
   </head>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+
   <body>
-    <h1>Helloo Crazyyyyy.....Minnu</h1>
+    <div ng-controller="DICtrller">
+      Your Name : <input type="text" ng-model="name" ng-blur="toUpper()"/><br/><br/>
+
+    </div>
+
   </body>
 </html>
